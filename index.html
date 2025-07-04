@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edson Macedo de Santana - Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: rgba(241, 245, 243, 0.918);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin: 10px auto;
+      display: block;
+    }
+
+    nav {
+      background-color: #023e8a;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: rgb(57, 231, 3);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0077b6;
+      text-decoration: underline;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      grid-column: 1 / -1;
+      margin-bottom: 30px;
+    }
+
+    article {
+      background-color: #e0f7fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    aside {
+      background-color: #fff3cd;
+      padding: 20px;
+      border-left: 10px solid #ffecb5;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #a5f2ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* BOTÃO VOLTAR AO TOPO */
+    #voltar-topo {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+
+    #voltar-topo:hover {
+      background-color: #023e8a;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      aside {
+        border-left: none;
+        border-top: 5px solid #ffecb5;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Edson Macedo de Santana</h1>
+    <p>A suprema arte da guerra é derrotar o inimigo sem lutar.</p>
+    <img src="edson.jpg" alt="FOTO">
+  </header>
+
+  <nav>   
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#extras">Extras</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou profissional com 15 anos de experiência sólida na área de Logística, atuando principalmente em Centros de Distribuição. Ao longo da minha trajetória, desenvolvi habilidades abrangentes em operações Inbound e Outbound, controle e execução de inventários, gestão de estoque, processos de picking, conferência de mercadorias, além de forte atuação na área administrativa e no controle de indicadores operacionais.
+
+Tenho conhecimento prático e avançado em sistemas de gestão como WMS, TOTVS(PROTHEUS) e SAP Business One, o que me permite integrar tecnologia à otimização de processos logísticos com eficiência.
+
+Atualmente, estou ampliando minha formação acadêmica com o curso de Análise e Desenvolvimento de Sistemas, com o objetivo de unir minha experiência logística à área de tecnologia, contribuindo de forma estratégica para a transformação digital nas operações empresariais.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Excel</li>
+        <li>Power BI</li>
+        <li>Análise de Dados</li>
+        <li>Desenvolvimento de DashBoard</li>
+        <li>Espertize em Sistemas de Gestão</li>
+        <li>WMS</li>
+        <li>PROTHEUS (TOTVS)</li>
+        <li>SAP Business ONE</li>
+        <li>Indicadores de Desempenho</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <article>
+        <h3>Projeto 1 - Dashboard de Vendas</h3>
+        <p>Um painel interativo de invetário fictício usando Ecxel.</p>
+        <br>
+      <a href="projeto1.jpg" target="_blank">📊 Ver Imagem do Projeto 1</a>
+      </article>
+      <article>
+        <h3>Projeto 2 - Análise de Dados Educacionais</h3>
+        <p>Simulação Um pe ainel interativo dvendas fictício usando Ecxel.</p>
+        <br>
+      <a href="projeto2.jpg" target="_blank">📈 Ver Imagem do Projeto 2</a>
+      </article>
+    </section>
+
+    <aside id="extras">
+      <h2>Extras</h2>
+      <p>Adoro música e assistir filmes nas horas vagas.</p>
+      <p>Gosto de me divertir, sair com amigos, filhos e família.</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/edson-macedo-santana" target="_blank">edson-macedo-santana</a></p>
+    </aside>
+  </main>
+
+  <footer id="contato">
+    <p>Contato: <a href="mailto:edsonmacedoresf@gmail.com">edsonmacedoresf@gmail.com</a></p>
+    <p>© 2025 Edson Macedo de Santana</p>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="voltar-topo" title="Voltar ao topo">↑</button>
+
+  <script>
+    const botaoTopo = document.getElementById("voltar-topo");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        botaoTopo.style.display = "block";
+      } else {
+        botaoTopo.style.display = "none";
+      }
+    };
+
+    botaoTopo.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
